@@ -10,7 +10,7 @@
   "scripts": {
     "start": "sinopia  --config config.yaml",
 	"postinstall": "winser -i -s -c",
-	"preuninstall": "winser -r -x -s",
+	"preuninstall": "winser -r -x -s"
   },
   "keywords": [
     "sinopia",
