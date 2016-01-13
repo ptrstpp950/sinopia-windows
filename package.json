@@ -1,0 +1,21 @@
+{
+  "name": "sinopia-windows",
+  "version": "0.9.0",
+  "description": "setup sinopia as windows service",
+  "dependencies": {
+    "sinopia": "^1.4.0",
+    "winser": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "sinopia  --config config.yaml",
+	"postinstall": "winser -i -s -c",
+	"preuninstall": "winser -r -x -s",
+  },
+  "keywords": [
+    "sinopia",
+    "windows"
+  ],
+  "author": "Piotr Stapp <ptrstpp950@gmail.com>",
+  "license": "ISC"
+}
